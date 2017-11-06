@@ -17,10 +17,17 @@
 		3E25BAC91FB09599004B1E98 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAC81FB09599004B1E98 /* HomeViewModel.swift */; };
 		3E25BACD1FB09660004B1E98 /* AttributedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BACC1FB09660004B1E98 /* AttributedTextField.swift */; };
 		3E25BACF1FB09694004B1E98 /* UIColor+Phenix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BACE1FB09694004B1E98 /* UIColor+Phenix.swift */; };
-		3E25BAD11FB099B8004B1E98 /* LatestRoomsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAD01FB099B8004B1E98 /* LatestRoomsDataSource.swift */; };
+		3E25BAD11FB099B8004B1E98 /* RoomsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAD01FB099B8004B1E98 /* RoomsDataSource.swift */; };
 		3E25BAD31FB09A1D004B1E98 /* StorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAD21FB09A1D004B1E98 /* StorageController.swift */; };
 		3E25BAD61FB09AD3004B1E98 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAD51FB09AD3004B1E98 /* RoomCell.swift */; };
 		3E25BADA1FB09C29004B1E98 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAD91FB09C29004B1E98 /* Room.swift */; };
+		3E25BAE01FB0B438004B1E98 /* MyRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BADF1FB0B438004B1E98 /* MyRoomsViewController.swift */; };
+		3E25BAE21FB0B488004B1E98 /* MyRoomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAE11FB0B488004B1E98 /* MyRoomsViewModel.swift */; };
+		3E25BAE61FB0B561004B1E98 /* HomeBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAE51FB0B561004B1E98 /* HomeBaseViewController.swift */; };
+		3E25BAE81FB0B6CB004B1E98 /* UIStoryboard+Phenix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAE71FB0B6CB004B1E98 /* UIStoryboard+Phenix.swift */; };
+		3E25BAEB1FB0B705004B1E98 /* NewRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAEA1FB0B705004B1E98 /* NewRoomViewController.swift */; };
+		3E25BAED1FB0B715004B1E98 /* NewRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAEC1FB0B715004B1E98 /* NewRoomViewModel.swift */; };
+		3E25BAEF1FB0B741004B1E98 /* Rooms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E25BAEE1FB0B741004B1E98 /* Rooms.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +55,17 @@
 		3E25BAC81FB09599004B1E98 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3E25BACC1FB09660004B1E98 /* AttributedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedTextField.swift; sourceTree = "<group>"; };
 		3E25BACE1FB09694004B1E98 /* UIColor+Phenix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Phenix.swift"; sourceTree = "<group>"; };
-		3E25BAD01FB099B8004B1E98 /* LatestRoomsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestRoomsDataSource.swift; sourceTree = "<group>"; };
+		3E25BAD01FB099B8004B1E98 /* RoomsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsDataSource.swift; sourceTree = "<group>"; };
 		3E25BAD21FB09A1D004B1E98 /* StorageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageController.swift; sourceTree = "<group>"; };
 		3E25BAD51FB09AD3004B1E98 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
 		3E25BAD91FB09C29004B1E98 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		3E25BADF1FB0B438004B1E98 /* MyRoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomsViewController.swift; sourceTree = "<group>"; };
+		3E25BAE11FB0B488004B1E98 /* MyRoomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomsViewModel.swift; sourceTree = "<group>"; };
+		3E25BAE51FB0B561004B1E98 /* HomeBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseViewController.swift; sourceTree = "<group>"; };
+		3E25BAE71FB0B6CB004B1E98 /* UIStoryboard+Phenix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Phenix.swift"; sourceTree = "<group>"; };
+		3E25BAEA1FB0B705004B1E98 /* NewRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoomViewController.swift; sourceTree = "<group>"; };
+		3E25BAEC1FB0B715004B1E98 /* NewRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoomViewModel.swift; sourceTree = "<group>"; };
+		3E25BAEE1FB0B741004B1E98 /* Rooms.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rooms.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				3E25BAC41FB09009004B1E98 /* Model */,
-				3E25BAC21FB08FFC004B1E98 /* Network */,
 				3E25BAC11FB08FF3004B1E98 /* Screens */,
 				3E25BAC01FB08FE8004B1E98 /* Storyboards */,
 				3E25BAC51FB09025004B1E98 /* Supporting Files */,
@@ -118,6 +131,7 @@
 			children = (
 				3E25BAA11FB08F71004B1E98 /* Home.storyboard */,
 				3E25BAA91FB08F71004B1E98 /* LaunchScreen.storyboard */,
+				3E25BAEE1FB0B741004B1E98 /* Rooms.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -126,15 +140,10 @@
 			isa = PBXGroup;
 			children = (
 				3E25BACA1FB095BE004B1E98 /* Home */,
+				3E25BADE1FB0B3F6004B1E98 /* MyRooms */,
+				3E25BAE91FB0B6F4004B1E98 /* NewRoom */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		3E25BAC21FB08FFC004B1E98 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		3E25BAC41FB09009004B1E98 /* Model */ = {
@@ -142,6 +151,7 @@
 			children = (
 				3E25BAA41FB08F71004B1E98 /* Phenix.xcdatamodeld */,
 				3E25BAD91FB09C29004B1E98 /* Room.swift */,
+				3E25BAD01FB099B8004B1E98 /* RoomsDataSource.swift */,
 				3E25BAD21FB09A1D004B1E98 /* StorageController.swift */,
 			);
 			path = Model;
@@ -153,6 +163,7 @@
 				3E25BAA71FB08F71004B1E98 /* Assets.xcassets */,
 				3E25BAAC1FB08F71004B1E98 /* Info.plist */,
 				3E25BACE1FB09694004B1E98 /* UIColor+Phenix.swift */,
+				3E25BAE71FB0B6CB004B1E98 /* UIStoryboard+Phenix.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -160,10 +171,9 @@
 		3E25BACA1FB095BE004B1E98 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				3E25BAD41FB09ABF004B1E98 /* Views */,
+				3E25BAE51FB0B561004B1E98 /* HomeBaseViewController.swift */,
 				3E25BAC61FB09110004B1E98 /* HomeViewController.swift */,
 				3E25BAC81FB09599004B1E98 /* HomeViewModel.swift */,
-				3E25BAD01FB099B8004B1E98 /* LatestRoomsDataSource.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -172,16 +182,27 @@
 			isa = PBXGroup;
 			children = (
 				3E25BACC1FB09660004B1E98 /* AttributedTextField.swift */,
+				3E25BAD51FB09AD3004B1E98 /* RoomCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		3E25BAD41FB09ABF004B1E98 /* Views */ = {
+		3E25BADE1FB0B3F6004B1E98 /* MyRooms */ = {
 			isa = PBXGroup;
 			children = (
-				3E25BAD51FB09AD3004B1E98 /* RoomCell.swift */,
+				3E25BADF1FB0B438004B1E98 /* MyRoomsViewController.swift */,
+				3E25BAE11FB0B488004B1E98 /* MyRoomsViewModel.swift */,
 			);
-			path = Views;
+			path = MyRooms;
+			sourceTree = "<group>";
+		};
+		3E25BAE91FB0B6F4004B1E98 /* NewRoom */ = {
+			isa = PBXGroup;
+			children = (
+				3E25BAEA1FB0B705004B1E98 /* NewRoomViewController.swift */,
+				3E25BAEC1FB0B715004B1E98 /* NewRoomViewModel.swift */,
+			);
+			path = NewRoom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +291,7 @@
 				3E25BAAB1FB08F71004B1E98 /* LaunchScreen.storyboard in Resources */,
 				3E25BAA81FB08F71004B1E98 /* Assets.xcassets in Resources */,
 				3E25BAA31FB08F71004B1E98 /* Home.storyboard in Resources */,
+				3E25BAEF1FB0B741004B1E98 /* Rooms.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,16 +309,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E25BAEB1FB0B705004B1E98 /* NewRoomViewController.swift in Sources */,
 				3E25BAA61FB08F71004B1E98 /* Phenix.xcdatamodeld in Sources */,
 				3E25BACF1FB09694004B1E98 /* UIColor+Phenix.swift in Sources */,
 				3E25BA9E1FB08F71004B1E98 /* AppDelegate.swift in Sources */,
+				3E25BAED1FB0B715004B1E98 /* NewRoomViewModel.swift in Sources */,
+				3E25BAE01FB0B438004B1E98 /* MyRoomsViewController.swift in Sources */,
 				3E25BAD31FB09A1D004B1E98 /* StorageController.swift in Sources */,
+				3E25BAE61FB0B561004B1E98 /* HomeBaseViewController.swift in Sources */,
 				3E25BADA1FB09C29004B1E98 /* Room.swift in Sources */,
-				3E25BAD11FB099B8004B1E98 /* LatestRoomsDataSource.swift in Sources */,
+				3E25BAD11FB099B8004B1E98 /* RoomsDataSource.swift in Sources */,
+				3E25BAE81FB0B6CB004B1E98 /* UIStoryboard+Phenix.swift in Sources */,
 				3E25BAC71FB09110004B1E98 /* HomeViewController.swift in Sources */,
 				3E25BAC91FB09599004B1E98 /* HomeViewModel.swift in Sources */,
 				3E25BAD61FB09AD3004B1E98 /* RoomCell.swift in Sources */,
 				3E25BACD1FB09660004B1E98 /* AttributedTextField.swift in Sources */,
+				3E25BAE21FB0B488004B1E98 /* MyRoomsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,8 @@
 import UIKit
 
 class RoomCell: UITableViewCell {
-
+    @IBOutlet weak var roomNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

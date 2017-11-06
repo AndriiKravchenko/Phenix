@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Rooms View Controller-->
+        <scene sceneID="U2H-vK-GVo">
+            <objects>
+                <viewController storyboardIdentifier="myRoomsViewController" id="qru-NF-KWJ" customClass="MyRoomsViewController" customModule="Phenix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="guY-oG-ZZY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="VIT-hH-cAS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello!" borderStyle="line" placeholder="Enter Room Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rek-2P-ojY" customClass="AttributedTextField" customModule="Phenix" customModuleProvider="target">
+                                <rect key="frame" x="50" y="65" width="275" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="60N-ec-1xt"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9j-DA-rrL">
+                                <rect key="frame" x="99" y="160" width="177" height="30"/>
+                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Create New Room" image="addButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UZ5-Az-rnr">
+                                <rect key="frame" x="0.0" y="240" width="375" height="427"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="roomCell" id="kOG-Aj-eDU" customClass="RoomCell" customModule="Phenix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kOG-Aj-eDU" id="cCa-Ux-1Sg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qou-a5-sSG">
+                                                    <rect key="frame" x="23" y="11.5" width="306" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectRoomIcon" translatesAutoresizingMaskIntoConstraints="NO" id="N5a-LX-svD">
+                                                    <rect key="frame" x="345" y="7.5" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="A1N-rM-MnA"/>
+                                                        <constraint firstAttribute="height" constant="30" id="P48-vM-vj4"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Qou-a5-sSG" firstAttribute="leading" secondItem="cCa-Ux-1Sg" secondAttribute="leadingMargin" constant="8" id="KCX-zp-Twl"/>
+                                                <constraint firstItem="N5a-LX-svD" firstAttribute="leading" secondItem="Qou-a5-sSG" secondAttribute="trailing" constant="16" id="qku-f9-6EM"/>
+                                                <constraint firstItem="N5a-LX-svD" firstAttribute="centerY" secondItem="cCa-Ux-1Sg" secondAttribute="centerY" id="wnl-JK-W89"/>
+                                                <constraint firstAttribute="trailing" secondItem="N5a-LX-svD" secondAttribute="trailing" id="yda-EA-Evu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Qou-a5-sSG" firstAttribute="centerY" secondItem="kOG-Aj-eDU" secondAttribute="centerY" id="1nT-Ab-iYc"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="roomNameLabel" destination="Qou-a5-sSG" id="A5f-jA-2x4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UZ5-Az-rnr" firstAttribute="bottom" secondItem="Fej-wP-OlR" secondAttribute="bottom" id="6oz-aU-FK8"/>
+                            <constraint firstItem="Fej-wP-OlR" firstAttribute="trailing" secondItem="rek-2P-ojY" secondAttribute="trailing" constant="50" id="7u6-sa-B0K"/>
+                            <constraint firstItem="p9j-DA-rrL" firstAttribute="centerX" secondItem="Fej-wP-OlR" secondAttribute="centerX" id="8T6-Ma-BMc"/>
+                            <constraint firstItem="VIT-hH-cAS" firstAttribute="top" secondItem="guY-oG-ZZY" secondAttribute="top" id="AGe-Ks-gVc"/>
+                            <constraint firstItem="UZ5-Az-rnr" firstAttribute="top" secondItem="p9j-DA-rrL" secondAttribute="bottom" constant="50" id="AJR-sL-WhE"/>
+                            <constraint firstItem="UZ5-Az-rnr" firstAttribute="leading" secondItem="Fej-wP-OlR" secondAttribute="leading" id="Swf-HB-ON6"/>
+                            <constraint firstItem="VIT-hH-cAS" firstAttribute="bottom" secondItem="Fej-wP-OlR" secondAttribute="bottom" id="Tlj-jS-5Kc"/>
+                            <constraint firstItem="p9j-DA-rrL" firstAttribute="top" secondItem="rek-2P-ojY" secondAttribute="bottom" constant="50" id="YXu-ch-occ"/>
+                            <constraint firstItem="VIT-hH-cAS" firstAttribute="trailing" secondItem="Fej-wP-OlR" secondAttribute="trailing" id="ft0-nl-x8N"/>
+                            <constraint firstItem="rek-2P-ojY" firstAttribute="top" secondItem="Fej-wP-OlR" secondAttribute="top" constant="45" id="lgz-3U-kBz"/>
+                            <constraint firstItem="UZ5-Az-rnr" firstAttribute="trailing" secondItem="Fej-wP-OlR" secondAttribute="trailing" id="mWk-E9-QP6"/>
+                            <constraint firstItem="VIT-hH-cAS" firstAttribute="leading" secondItem="Fej-wP-OlR" secondAttribute="leading" id="nmr-Id-bGd"/>
+                            <constraint firstItem="rek-2P-ojY" firstAttribute="leading" secondItem="Fej-wP-OlR" secondAttribute="leading" constant="50" id="t88-08-Zwt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fej-wP-OlR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dK-Ia-6Mu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="129.98500749625188"/>
+        </scene>
+        <!--New Room View Controller-->
+        <scene sceneID="Gxv-wS-Yoq">
+            <objects>
+                <viewController storyboardIdentifier="newRoomViewController" id="Ff7-jh-ICT" customClass="NewRoomViewController" customModule="Phenix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2bY-yb-X5d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="KrJ-Ap-UyK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5Le-zO-Vjz">
+                                <rect key="frame" x="62" y="120" width="250" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="kvb-C5-acl"/>
+                                    <constraint firstAttribute="width" constant="250" id="wUW-OQ-zwj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfb-ie-fcm">
+                                <rect key="frame" x="62" y="337" width="250" height="45"/>
+                                <color key="backgroundColor" red="0.92941176470588238" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="HAF-Xx-uxT"/>
+                                    <constraint firstAttribute="height" constant="45" id="hxi-8s-trC"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello!" borderStyle="line" placeholder="Enter Room Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ChM-68-piA" customClass="AttributedTextField" customModule="Phenix" customModuleProvider="target">
+                                <rect key="frame" x="50" y="276" width="275" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="oI6-6w-f3d"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KrJ-Ap-UyK" firstAttribute="bottom" secondItem="c8H-hz-wao" secondAttribute="bottom" id="6hI-gu-Yus"/>
+                            <constraint firstItem="KrJ-Ap-UyK" firstAttribute="top" secondItem="2bY-yb-X5d" secondAttribute="top" id="Pr7-LO-jN2"/>
+                            <constraint firstItem="ChM-68-piA" firstAttribute="top" secondItem="5Le-zO-Vjz" secondAttribute="bottom" constant="55" id="URm-5G-fe8"/>
+                            <constraint firstItem="ChM-68-piA" firstAttribute="leading" secondItem="c8H-hz-wao" secondAttribute="leading" constant="50" id="Uhf-rg-Lzv"/>
+                            <constraint firstItem="Kfb-ie-fcm" firstAttribute="centerX" secondItem="c8H-hz-wao" secondAttribute="centerX" id="WWO-zv-QRa"/>
+                            <constraint firstItem="KrJ-Ap-UyK" firstAttribute="trailing" secondItem="c8H-hz-wao" secondAttribute="trailing" id="b9l-Ze-St8"/>
+                            <constraint firstItem="Kfb-ie-fcm" firstAttribute="top" secondItem="ChM-68-piA" secondAttribute="bottom" constant="16" id="cni-bv-kN7"/>
+                            <constraint firstItem="KrJ-Ap-UyK" firstAttribute="leading" secondItem="c8H-hz-wao" secondAttribute="leading" id="eM6-dW-Dcg"/>
+                            <constraint firstItem="c8H-hz-wao" firstAttribute="trailing" secondItem="ChM-68-piA" secondAttribute="trailing" constant="50" id="g3B-oV-Aor"/>
+                            <constraint firstItem="5Le-zO-Vjz" firstAttribute="top" secondItem="c8H-hz-wao" secondAttribute="top" constant="100" id="jtW-Ya-qGF"/>
+                            <constraint firstItem="5Le-zO-Vjz" firstAttribute="centerX" secondItem="c8H-hz-wao" secondAttribute="centerX" id="xN5-vY-jiU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c8H-hz-wao"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQq-cB-C8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1762" y="130"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="addButton" width="30" height="30"/>
+        <image name="mainBackground" width="375" height="667"/>
+        <image name="mainLogo" width="243" height="103"/>
+        <image name="selectRoomIcon" width="29" height="29"/>
+    </resources>
+</document>

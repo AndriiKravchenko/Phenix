@@ -1,5 +1,5 @@
 //
-//  LatestRoomsDataSource.swift
+//  RoomsDataSource.swift
 //  Phenix
 //
 //  Created by Andrii Kravchenko on 06.11.17.
@@ -9,17 +9,17 @@
 import UIKit
 import CoreData
 
-protocol LatestRoomsDataSourceDelegate: class  {
+protocol RoomsDataSourceDelegate: class  {
     func selectRoom(_ room: Room)
 }
 
-class LatestRoomsDataSource: NSObject {
-    fileprivate let roomCellIdentifier = "incidentCell"
+class RoomsDataSource: NSObject {
+    fileprivate let roomCellIdentifier = "roomCell"
     
     fileprivate let storage = StorageController()
     fileprivate var fetchedResultController: NSFetchedResultsController<Room>
     
-    weak var delegate: LatestRoomsDataSourceDelegate?
+    weak var delegate: RoomsDataSourceDelegate?
     weak var tableView: UITableView?
     
     override init() {
@@ -28,14 +28,14 @@ class LatestRoomsDataSource: NSObject {
         super.init()
     }
     
-    func getRooms() {
+    func getRooms(count: Int? = nil) {
         fetchedResultController.delegate = self
         try? fetchedResultController.performFetch()
         tableView?.reloadData()
     }
 }
 
-extension LatestRoomsDataSource: UITableViewDataSource, UITableViewDelegate {
+extension RoomsDataSource: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return fetchedResultController.sections?[section].numberOfObjects ?? 0
     }
@@ -53,10 +53,11 @@ extension LatestRoomsDataSource: UITableViewDataSource, UITableViewDelegate {
 
     func configure(cell: RoomCell, atIndexPath indexPath: IndexPath) {
         let room = fetchedResultController.object(at: indexPath)
+        cell.roomNameLabel.text = room.name
     }
 }
 
-extension LatestRoomsDataSource: NSFetchedResultsControllerDelegate {
+extension RoomsDataSource: NSFetchedResultsControllerDelegate {
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView?.beginUpdates()
     }

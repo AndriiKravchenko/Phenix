@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  NewRoomViewController.swift
 //  Phenix
 //
 //  Created by Andrii Kravchenko on 06.11.17.
@@ -8,15 +8,12 @@
 
 import UIKit
 
-class HomeViewController: HomeBaseViewController {    
-    let viewModel = HomeViewModel()
+class NewRoomViewController: UIViewController {
+
+    let viewModel = NewRoomViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
 
-    @IBAction func viewAllRoomsClicked(_ sender: Any) {
-        
     }
 }
