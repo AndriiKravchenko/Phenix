@@ -37,6 +37,13 @@ class HomeBaseViewController: UIViewController {
     }
 }
 
+extension HomeBaseViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return true
+    }
+}
+
 extension HomeBaseViewController: RoomsDataSourceDelegate {
     func selectRoom(_ room: Room) {
         

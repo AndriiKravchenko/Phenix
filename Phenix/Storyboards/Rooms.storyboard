@@ -30,6 +30,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="qru-NF-KWJ" id="l8w-rR-m4X"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9j-DA-rrL">
                                 <rect key="frame" x="99" y="160" width="177" height="30"/>
@@ -53,13 +56,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qou-a5-sSG">
-                                                    <rect key="frame" x="23" y="11.5" width="306" height="21"/>
+                                                    <rect key="frame" x="23" y="11.5" width="290" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectRoomIcon" translatesAutoresizingMaskIntoConstraints="NO" id="N5a-LX-svD">
-                                                    <rect key="frame" x="345" y="7.5" width="30" height="30"/>
+                                                    <rect key="frame" x="329" y="7.5" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="A1N-rM-MnA"/>
                                                         <constraint firstAttribute="height" constant="30" id="P48-vM-vj4"/>
@@ -70,7 +73,7 @@
                                                 <constraint firstItem="Qou-a5-sSG" firstAttribute="leading" secondItem="cCa-Ux-1Sg" secondAttribute="leadingMargin" constant="8" id="KCX-zp-Twl"/>
                                                 <constraint firstItem="N5a-LX-svD" firstAttribute="leading" secondItem="Qou-a5-sSG" secondAttribute="trailing" constant="16" id="qku-f9-6EM"/>
                                                 <constraint firstItem="N5a-LX-svD" firstAttribute="centerY" secondItem="cCa-Ux-1Sg" secondAttribute="centerY" id="wnl-JK-W89"/>
-                                                <constraint firstAttribute="trailing" secondItem="N5a-LX-svD" secondAttribute="trailing" id="yda-EA-Evu"/>
+                                                <constraint firstAttribute="trailing" secondItem="N5a-LX-svD" secondAttribute="trailing" constant="16" id="yda-EA-Evu"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -156,9 +159,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ff7-jh-ICT" id="sRc-J5-1DR"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="KrJ-Ap-UyK" firstAttribute="bottom" secondItem="c8H-hz-wao" secondAttribute="bottom" id="6hI-gu-Yus"/>
                             <constraint firstItem="KrJ-Ap-UyK" firstAttribute="top" secondItem="2bY-yb-X5d" secondAttribute="top" id="Pr7-LO-jN2"/>
@@ -173,9 +180,20 @@
                             <constraint firstItem="5Le-zO-Vjz" firstAttribute="centerX" secondItem="c8H-hz-wao" secondAttribute="centerX" id="xN5-vY-jiU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c8H-hz-wao"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Vqm-kU-i0O" appends="YES" id="Nbr-LF-gWi"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="roomNameTextField" destination="ChM-68-piA" id="d1A-Yr-iyI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQq-cB-C8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Vqm-kU-i0O">
+                    <connections>
+                        <action selector="tapViewOutside:" destination="Ff7-jh-ICT" id="Fn8-Sw-hS7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1762" y="130"/>
         </scene>

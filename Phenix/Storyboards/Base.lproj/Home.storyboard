@@ -37,6 +37,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0Ku-EQ-1AA"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGI-dL-JY1">
                                 <rect key="frame" x="179" y="292" width="16" height="21"/>
@@ -57,7 +60,7 @@
                                     <action selector="createNewRoomClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2f-5F-fT5"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bqA-mz-VO4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bqA-mz-VO4">
                                 <rect key="frame" x="0.0" y="381" width="375" height="160"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -72,13 +75,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wp-JD-QSP">
-                                                    <rect key="frame" x="23" y="14" width="306" height="21"/>
+                                                    <rect key="frame" x="23" y="14" width="290" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectRoomIcon" translatesAutoresizingMaskIntoConstraints="NO" id="wCK-fE-oew">
-                                                    <rect key="frame" x="345" y="10" width="30" height="30"/>
+                                                    <rect key="frame" x="329" y="10" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="4tU-lI-OZC"/>
                                                         <constraint firstAttribute="width" constant="30" id="jt8-KQ-VYR"/>
@@ -87,7 +90,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="wCK-fE-oew" firstAttribute="leading" secondItem="4wp-JD-QSP" secondAttribute="trailing" constant="16" id="L6y-0J-fl4"/>
-                                                <constraint firstAttribute="trailing" secondItem="wCK-fE-oew" secondAttribute="trailing" id="bjl-Cg-jMh"/>
+                                                <constraint firstAttribute="trailing" secondItem="wCK-fE-oew" secondAttribute="trailing" constant="16" id="bjl-Cg-jMh"/>
                                                 <constraint firstItem="4wp-JD-QSP" firstAttribute="leading" secondItem="naQ-LP-xxI" secondAttribute="leadingMargin" constant="8" id="cdo-Yo-2QS"/>
                                                 <constraint firstItem="wCK-fE-oew" firstAttribute="centerY" secondItem="naQ-LP-xxI" secondAttribute="centerY" id="pB6-6n-36C"/>
                                             </constraints>

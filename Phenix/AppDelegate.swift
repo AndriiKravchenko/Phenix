@@ -15,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         setupAppearance()
+        
+        //FOR TEST
+        if StorageController.shared.visitedRoomsCount() == 0 {
+            StorageController.shared.addStubRooms()
+        }
+        //FOR TEST
+        
         return true
     }
 
