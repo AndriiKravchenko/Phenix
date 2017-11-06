@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Streaming View Controller-->
+        <scene sceneID="SgK-Jj-dET">
+            <objects>
+                <viewController id="Xqw-hv-Qxe" customClass="StreamingViewController" customModule="Phenix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iDH-Gx-vfm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUf-38-Wol">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="L9K-uN-uLg"/>
+                                    <barButtonItem title="Item" id="nlG-pd-MET"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="rwV-rf-56m"/>
+                                    <barButtonItem title="Item" id="DaB-qd-q5C"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="llT-TX-7Yb"/>
+                                    <barButtonItem title="Item" id="gKh-Gb-564"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="6Bn-lS-Ij3"/>
+                                    <barButtonItem title="Item" id="lBD-Of-9HI"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Kul-l3-e85"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UUf-38-Wol" firstAttribute="bottom" secondItem="uPJ-7R-Dy4" secondAttribute="bottom" id="HDa-W9-GOa"/>
+                            <constraint firstItem="UUf-38-Wol" firstAttribute="trailing" secondItem="uPJ-7R-Dy4" secondAttribute="trailing" id="S7Y-re-XXK"/>
+                            <constraint firstItem="UUf-38-Wol" firstAttribute="leading" secondItem="uPJ-7R-Dy4" secondAttribute="leading" id="lzx-fT-csN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uPJ-7R-Dy4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f04-OK-8mO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114" y="138"/>
+        </scene>
+        <!--Participants View Controller-->
+        <scene sceneID="KJd-eT-rmM">
+            <objects>
+                <viewController id="f9w-bQ-ada" customClass="ParticipantsViewController" customModule="Phenix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iz5-OF-2he">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="5u0-ru-hXL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33Q-tw-3AR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593" y="129"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="vNL-36-PiU">
+            <objects>
+                <viewController id="CvF-Fr-jJq" customClass="ChatViewController" customModule="Phenix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QPM-yI-5Ry">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="iX1-c6-ZTp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aH5-RD-0hN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1361" y="131"/>
+        </scene>
+    </scenes>
+</document>

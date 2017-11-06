@@ -28,6 +28,11 @@
 		3E25BAEB1FB0B705004B1E98 /* NewRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAEA1FB0B705004B1E98 /* NewRoomViewController.swift */; };
 		3E25BAED1FB0B715004B1E98 /* NewRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAEC1FB0B715004B1E98 /* NewRoomViewModel.swift */; };
 		3E25BAEF1FB0B741004B1E98 /* Rooms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E25BAEE1FB0B741004B1E98 /* Rooms.storyboard */; };
+		3E25BAF31FB0BABF004B1E98 /* StreamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAF21FB0BABF004B1E98 /* StreamingViewController.swift */; };
+		3E25BAF51FB0BACC004B1E98 /* Streaming.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E25BAF41FB0BACC004B1E98 /* Streaming.storyboard */; };
+		3E25BAF71FB0BAF3004B1E98 /* StreamingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAF61FB0BAF3004B1E98 /* StreamingViewModel.swift */; };
+		3E25BAFB1FB0BB7D004B1E98 /* ParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAFA1FB0BB7D004B1E98 /* ParticipantsViewController.swift */; };
+		3E25BAFE1FB0BC05004B1E98 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E25BAFD1FB0BC05004B1E98 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,11 @@
 		3E25BAEA1FB0B705004B1E98 /* NewRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoomViewController.swift; sourceTree = "<group>"; };
 		3E25BAEC1FB0B715004B1E98 /* NewRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoomViewModel.swift; sourceTree = "<group>"; };
 		3E25BAEE1FB0B741004B1E98 /* Rooms.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rooms.storyboard; sourceTree = "<group>"; };
+		3E25BAF21FB0BABF004B1E98 /* StreamingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingViewController.swift; sourceTree = "<group>"; };
+		3E25BAF41FB0BACC004B1E98 /* Streaming.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Streaming.storyboard; sourceTree = "<group>"; };
+		3E25BAF61FB0BAF3004B1E98 /* StreamingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingViewModel.swift; sourceTree = "<group>"; };
+		3E25BAFA1FB0BB7D004B1E98 /* ParticipantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsViewController.swift; sourceTree = "<group>"; };
+		3E25BAFD1FB0BC05004B1E98 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +142,7 @@
 				3E25BAA11FB08F71004B1E98 /* Home.storyboard */,
 				3E25BAA91FB08F71004B1E98 /* LaunchScreen.storyboard */,
 				3E25BAEE1FB0B741004B1E98 /* Rooms.storyboard */,
+				3E25BAF41FB0BACC004B1E98 /* Streaming.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -142,6 +153,7 @@
 				3E25BACA1FB095BE004B1E98 /* Home */,
 				3E25BADE1FB0B3F6004B1E98 /* MyRooms */,
 				3E25BAE91FB0B6F4004B1E98 /* NewRoom */,
+				3E25BAF11FB0BA94004B1E98 /* Streaming */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -203,6 +215,41 @@
 				3E25BAEC1FB0B715004B1E98 /* NewRoomViewModel.swift */,
 			);
 			path = NewRoom;
+			sourceTree = "<group>";
+		};
+		3E25BAF11FB0BA94004B1E98 /* Streaming */ = {
+			isa = PBXGroup;
+			children = (
+				3E25BAFC1FB0BBF4004B1E98 /* Chat */,
+				3E25BAF81FB0BB5B004B1E98 /* MainStreaming */,
+				3E25BAF91FB0BB67004B1E98 /* Participants */,
+			);
+			path = Streaming;
+			sourceTree = "<group>";
+		};
+		3E25BAF81FB0BB5B004B1E98 /* MainStreaming */ = {
+			isa = PBXGroup;
+			children = (
+				3E25BAF21FB0BABF004B1E98 /* StreamingViewController.swift */,
+				3E25BAF61FB0BAF3004B1E98 /* StreamingViewModel.swift */,
+			);
+			path = MainStreaming;
+			sourceTree = "<group>";
+		};
+		3E25BAF91FB0BB67004B1E98 /* Participants */ = {
+			isa = PBXGroup;
+			children = (
+				3E25BAFA1FB0BB7D004B1E98 /* ParticipantsViewController.swift */,
+			);
+			path = Participants;
+			sourceTree = "<group>";
+		};
+		3E25BAFC1FB0BBF4004B1E98 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				3E25BAFD1FB0BC05004B1E98 /* ChatViewController.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +338,7 @@
 				3E25BAAB1FB08F71004B1E98 /* LaunchScreen.storyboard in Resources */,
 				3E25BAA81FB08F71004B1E98 /* Assets.xcassets in Resources */,
 				3E25BAA31FB08F71004B1E98 /* Home.storyboard in Resources */,
+				3E25BAF51FB0BACC004B1E98 /* Streaming.storyboard in Resources */,
 				3E25BAEF1FB0B741004B1E98 /* Rooms.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E25BAEB1FB0B705004B1E98 /* NewRoomViewController.swift in Sources */,
+				3E25BAFB1FB0BB7D004B1E98 /* ParticipantsViewController.swift in Sources */,
 				3E25BAA61FB08F71004B1E98 /* Phenix.xcdatamodeld in Sources */,
 				3E25BACF1FB09694004B1E98 /* UIColor+Phenix.swift in Sources */,
 				3E25BA9E1FB08F71004B1E98 /* AppDelegate.swift in Sources */,
@@ -320,10 +369,13 @@
 				3E25BADA1FB09C29004B1E98 /* Room.swift in Sources */,
 				3E25BAD11FB099B8004B1E98 /* RoomsDataSource.swift in Sources */,
 				3E25BAE81FB0B6CB004B1E98 /* UIStoryboard+Phenix.swift in Sources */,
+				3E25BAF31FB0BABF004B1E98 /* StreamingViewController.swift in Sources */,
 				3E25BAC71FB09110004B1E98 /* HomeViewController.swift in Sources */,
 				3E25BAC91FB09599004B1E98 /* HomeViewModel.swift in Sources */,
 				3E25BAD61FB09AD3004B1E98 /* RoomCell.swift in Sources */,
+				3E25BAF71FB0BAF3004B1E98 /* StreamingViewModel.swift in Sources */,
 				3E25BACD1FB09660004B1E98 /* AttributedTextField.swift in Sources */,
+				3E25BAFE1FB0BC05004B1E98 /* ChatViewController.swift in Sources */,
 				3E25BAE21FB0B488004B1E98 /* MyRoomsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
