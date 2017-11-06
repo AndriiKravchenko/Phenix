@@ -22,7 +22,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="VIT-hH-cAS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello!" borderStyle="line" placeholder="Enter Room Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rek-2P-ojY" customClass="AttributedTextField" customModule="Phenix" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Room Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rek-2P-ojY" customClass="RoomNameTextField" customModule="Phenix" customModuleProvider="target">
                                 <rect key="frame" x="50" y="65" width="275" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="60N-ec-1xt"/>
@@ -37,6 +37,9 @@
                                 <state key="normal" title="Create New Room" image="addButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="createNewRoomClicked:" destination="qru-NF-KWJ" eventType="touchUpInside" id="tTX-1K-Eqn"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UZ5-Az-rnr">
                                 <rect key="frame" x="0.0" y="240" width="375" height="427"/>
@@ -82,6 +85,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="UZ5-Az-rnr" firstAttribute="bottom" secondItem="Fej-wP-OlR" secondAttribute="bottom" id="6oz-aU-FK8"/>
                             <constraint firstItem="Fej-wP-OlR" firstAttribute="trailing" secondItem="rek-2P-ojY" secondAttribute="trailing" constant="50" id="7u6-sa-B0K"/>
@@ -98,9 +102,20 @@
                             <constraint firstItem="rek-2P-ojY" firstAttribute="leading" secondItem="Fej-wP-OlR" secondAttribute="leading" constant="50" id="t88-08-Zwt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fej-wP-OlR"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UlX-T8-MKv" appends="YES" id="0UW-v4-Vrd"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="latestRoomTableView" destination="UZ5-Az-rnr" id="9YM-UQ-2lq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dK-Ia-6Mu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UlX-T8-MKv">
+                    <connections>
+                        <action selector="viewTappedOutside:" destination="qru-NF-KWJ" id="e55-R1-nPy"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1004" y="129.98500749625188"/>
         </scene>
@@ -116,14 +131,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5Le-zO-Vjz">
-                                <rect key="frame" x="62" y="120" width="250" height="101"/>
+                                <rect key="frame" x="62.5" y="120" width="250" height="101"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="101" id="kvb-C5-acl"/>
                                     <constraint firstAttribute="width" constant="250" id="wUW-OQ-zwj"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfb-ie-fcm">
-                                <rect key="frame" x="62" y="337" width="250" height="45"/>
+                                <rect key="frame" x="62.5" y="337" width="250" height="45"/>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="HAF-Xx-uxT"/>
@@ -133,7 +148,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello!" borderStyle="line" placeholder="Enter Room Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ChM-68-piA" customClass="AttributedTextField" customModule="Phenix" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Room Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ChM-68-piA" customClass="RoomNameTextField" customModule="Phenix" customModuleProvider="target">
                                 <rect key="frame" x="50" y="276" width="275" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="oI6-6w-f3d"/>

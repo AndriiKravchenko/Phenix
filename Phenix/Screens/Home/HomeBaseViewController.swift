@@ -10,7 +10,7 @@ import UIKit
 
 class HomeBaseViewController: UIViewController {
     @IBOutlet weak var latestRoomTableView: UITableView!
-    @IBOutlet weak var roomNameTextField: AttributedTextField!
+    @IBOutlet weak var roomNameTextField: RoomNameTextField!
     
     let roomsDataSource = RoomsDataSource()
     
@@ -27,7 +27,11 @@ class HomeBaseViewController: UIViewController {
         roomsDataSource.tableView = latestRoomTableView
         roomsDataSource.getRooms()
     }
-        
+    
+    @IBAction func viewTappedOutside(_ sender: Any) {
+        view.endEditing(true)
+    }
+    
     @IBAction func createNewRoomClicked(_ sender: Any) {
         navigationController?.pushViewController(UIStoryboard.newRoomViewController(), animated: true)
     }

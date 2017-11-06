@@ -17,6 +17,6 @@ class HomeViewController: HomeBaseViewController {
     }
 
     @IBAction func viewAllRoomsClicked(_ sender: Any) {
-        
+        navigationController?.pushViewController(UIStoryboard.myRoomsViewController(), animated: true)
     }
 }

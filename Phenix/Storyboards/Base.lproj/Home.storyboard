@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fdj-1d-CNN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,21 +16,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Phenix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="1T0-2d-OPW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="KAC-tg-emZ">
-                                <rect key="frame" x="62" y="140" width="250" height="101"/>
+                                <rect key="frame" x="62" y="76" width="250" height="101"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="101" id="Ogg-ln-8AV"/>
                                     <constraint firstAttribute="width" constant="250" id="xuP-sg-fBq"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello!" borderStyle="line" placeholder="Enter Room Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2tV-nl-z3b" customClass="AttributedTextField" customModule="Phenix" customModuleProvider="target">
-                                <rect key="frame" x="50" y="303" width="275" height="45"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Room Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2tV-nl-z3b" customClass="RoomNameTextField" customModule="Phenix" customModuleProvider="target">
+                                <rect key="frame" x="50" y="239" width="275" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="LCp-TJ-oeV"/>
                                 </constraints>
@@ -39,23 +39,26 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGI-dL-JY1">
-                                <rect key="frame" x="179" y="356" width="16" height="21"/>
+                                <rect key="frame" x="179" y="292" width="16" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLr-aa-c9g">
-                                <rect key="frame" x="99" y="385" width="177" height="30"/>
+                                <rect key="frame" x="90" y="321" width="195" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="195" id="5vo-8p-g3W"/>
+                                </constraints>
                                 <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Create New Room" image="addButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="createNewRoomClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xxz-7G-ziH"/>
+                                    <action selector="createNewRoomClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2f-5F-fT5"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bqA-mz-VO4">
-                                <rect key="frame" x="0.0" y="445" width="375" height="160"/>
+                                <rect key="frame" x="0.0" y="381" width="375" height="160"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="gne-aX-Ppi"/>
@@ -100,7 +103,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dg-8g-Scs">
-                                <rect key="frame" x="122.5" y="621" width="130" height="30"/>
+                                <rect key="frame" x="122.5" y="557" width="130" height="30"/>
                                 <state key="normal" title="View All My Rooms">
                                     <color key="titleColor" red="0.96078431369999995" green="0.16078431369999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -110,6 +113,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2tV-nl-z3b" secondAttribute="trailing" constant="50" id="2UO-8Q-bsf"/>
                             <constraint firstItem="AGI-dL-JY1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3On-1a-qiG"/>
@@ -132,15 +136,43 @@
                             <constraint firstItem="bqA-mz-VO4" firstAttribute="top" secondItem="2tV-nl-z3b" secondAttribute="bottom" constant="97" id="ytT-dB-V8G"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8dd-SB-7U8" appends="YES" id="CTu-W4-BW1"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="gfS-oo-Zi4"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="latestRoomTableView" destination="bqA-mz-VO4" id="Dyf-3X-dtQ"/>
                         <outlet property="roomNameTextField" destination="2tV-nl-z3b" id="RbP-Cj-3vB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8dd-SB-7U8">
+                    <connections>
+                        <action selector="viewTappedOutside:" destination="BYZ-38-t0r" id="gdM-lZ-tqQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+            <point key="canvasLocation" x="456.80000000000001" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z9K-0K-YDv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fdj-1d-CNN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XmS-rS-GWL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dVm-w5-9CJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7Q-rc-eGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-306" y="117"/>
         </scene>
     </scenes>
     <resources>

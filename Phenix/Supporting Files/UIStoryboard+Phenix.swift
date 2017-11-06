@@ -12,4 +12,8 @@ extension UIStoryboard {
     static func newRoomViewController() -> NewRoomViewController {
         return UIStoryboard(name: "Rooms", bundle: nil).instantiateViewController(withIdentifier: "newRoomViewController") as! NewRoomViewController
     }
+    
+    static func myRoomsViewController() -> MyRoomsViewController {
+        return UIStoryboard(name: "Rooms", bundle: nil).instantiateViewController(withIdentifier: "myRoomsViewController") as! MyRoomsViewController
+    }
 }
